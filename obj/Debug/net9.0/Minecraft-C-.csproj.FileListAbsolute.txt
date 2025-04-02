@@ -1,0 +1,15 @@
+/home/damien/Desktop/Damien/C#/Minecraft-C-/bin/Debug/net9.0/Minecraft-C-
+/home/damien/Desktop/Damien/C#/Minecraft-C-/bin/Debug/net9.0/Minecraft-C-.deps.json
+/home/damien/Desktop/Damien/C#/Minecraft-C-/bin/Debug/net9.0/Minecraft-C-.runtimeconfig.json
+/home/damien/Desktop/Damien/C#/Minecraft-C-/bin/Debug/net9.0/Minecraft-C-.dll
+/home/damien/Desktop/Damien/C#/Minecraft-C-/bin/Debug/net9.0/Minecraft-C-.pdb
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.GeneratedMSBuildEditorConfig.editorconfig
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.AssemblyInfoInputs.cache
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.AssemblyInfo.cs
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.csproj.CoreCompileInputs.cache
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.sourcelink.json
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.dll
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/refint/Minecraft-C-.dll
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.pdb
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/Minecraft-C-.genruntimeconfig.cache
+/home/damien/Desktop/Damien/C#/Minecraft-C-/obj/Debug/net9.0/ref/Minecraft-C-.dll
