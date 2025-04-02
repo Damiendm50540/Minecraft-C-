@@ -9,9 +9,9 @@ public class Arme
         Degats = degats;
     }
 
-    public void Utiliser(Monstre cible)
+    public void Utiliser(Monstre cible, int degatsTotaux)
     {
-        cible.PV -= Degats;
-        Console.WriteLine($"{Nom} inflige {Degats} dégâts à {cible.Nom}.");
+        Console.WriteLine($"{Nom} inflige {degatsTotaux} de dégâts à {cible.Nom}.");
+        cible.PV -= degatsTotaux;
     }
 }

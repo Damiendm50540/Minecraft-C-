@@ -4,23 +4,54 @@ class Program
 {
     static void Main(string[] args)
     {
-        Joueur joueur = new Joueur("Steve", 100, 10);
-        Monstre monstre = new Monstre("Zombie", 50, 5);
+        Joueur joueur1 = new Joueur("Damien", 250, 5); 
+        Joueur joueur2 = new Joueur("Enzo", 100, 5);   
+        Monstre monstre = new Monstre("Abdel", 50, 5);
 
-        Arme epee = new Arme("Épée", 15);
-        Armure bouclier = new Armure("Bouclier", 20);
-        Outil pioche = new Outil("Pioche", 10);
+        joueur1.Attaquer(monstre);
+        if (monstre.PV <= 0)
+        {
+            Console.WriteLine($"{joueur1.Nom} a gagné !");
+            return;
+        }
 
-        joueur.Armes.Add(epee);
-        joueur.Armures.Add(bouclier);
-        joueur.Outils.Add(pioche);
+        monstre.Attaquer(joueur1);
+        if (joueur1.PV <= 0)
+        {
+            Console.WriteLine($"{monstre.Nom} a gagné !");
+            return;
+        }
 
-        joueur.Attaquer(monstre);
-        epee.Utiliser(monstre);
-        bouclier.Utiliser(joueur);
-        pioche.Utiliser();
+        Console.WriteLine($"{joueur1.Nom} a {joueur1.PV} PV restants.");
+        Console.WriteLine($"{monstre.Nom} a {monstre.PV} PV restants.");
 
-        Console.WriteLine($"PV du monstre : {monstre.PV}");
-        Console.WriteLine($"PV du joueur : {joueur.PV}");
+        Outil outil = new Outil("Hache", 10);
+        outil.Utiliser();
+
+        Arme arme = new Arme("Épée", 15); 
+        arme.Utiliser(monstre, joueur1.Degats + arme.Degats); 
+        if (monstre.PV <= 0)
+        {
+            Console.WriteLine($"{monstre.Nom} est vaincu ! {joueur1.Nom} a gagné !");
+            return;
+        }
+
+        Armure armure = new Armure("Bouclier", 20);
+        armure.Utiliser(joueur1);
+
+        Console.WriteLine($"{joueur1.Nom} a {joueur1.PV} PV restants après l'utilisation de l'armure.");
+
+        Arme arme = new Arme("Épée", 15); 
+        arme.Utiliser(joueur2, joueur1.Degats + arme.Degats); 
+        if (joueur2.PV <= 0)
+        {
+            Console.WriteLine($"{joueur2.Nom} est vaincu ! {joueur2.Nom} a gagné !");
+            return;
+        }
+        
+        Console.WriteLine($"{joueur2.Nom} a {joueur2.PV} PV restants après l'utilisation de l'arme.");
+
+    
+        
     }
 }
