@@ -1,3 +1,3 @@
 # Minecraft-C-
 
-TEST
+Projet C# Minecraft orienté objet
