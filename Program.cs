@@ -58,6 +58,7 @@ class Program
             Console.WriteLine("1. Attaquer");
             Console.WriteLine("2. Prendre une épée");
             Console.WriteLine("3. Prendre une armure");
+            Console.WriteLine("4. Prendre une armure");
             Console.Write("Choisissez une action : ");
             string choixJoueur2 = Console.ReadLine();
 
@@ -81,6 +82,10 @@ class Program
                     {
                         Console.WriteLine($"{joueur2.Nom} a déjà pris une armure !");
                     }
+                    break;
+                    case "4":
+                    joueur2.outils += epee.Degats;
+                    Console.WriteLine($"{joueur2.Nom} prend une {epee.Nom} et augmente ses dégâts de {epee.Degats}.");
                     break;
                 default:
             }

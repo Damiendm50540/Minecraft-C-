@@ -1,0 +1,37 @@
+# Fichiers et dossiers générés par Visual Studio
+.vs/
+*.user
+*.suo
+
+# Dossiers de sortie
+bin/
+obj/
+
+# Fichiers de build
+*.dll
+*.exe
+*.pdb
+*.log
+
+# Fichiers de configuration
+appsettings.json
+appsettings.*.json
+
+# Fichiers de dépendances
+packages/
+*.nupkg
+project.lock.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+*.log
+
+# Fichiers générés par IDE
+.idea/
+*.code-workspace
