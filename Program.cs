@@ -4,14 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-
         Console.Write("Entrez le nom du joueur 1 : ");
         string nomJoueur1 = Console.ReadLine();
         Console.Write("Entrez le nom du joueur 2 : ");
         string nomJoueur2 = Console.ReadLine();
 
-        Joueur joueur1 = new Joueur(nomJoueur1, 250, 5); 
-        Joueur joueur2 = new Joueur(nomJoueur2, 100, 5);   
+        Joueur joueur1 = new Joueur(nomJoueur1, 1000, 15); 
+        Joueur joueur2 = new Joueur(nomJoueur2, 1000, 15);   
 
         Arme epee = new Arme("Épée", 15);
         Armure bouclier = new Armure("Bouclier", 20);
@@ -46,6 +45,9 @@ class Program
                         Console.WriteLine($"{joueur1.Nom} a déjà pris une armure !");
                     }
                     break;
+                default:
+                    Console.WriteLine("Choix invalide !");
+                    break;
             }
 
             if (joueur2.PV <= 0)
@@ -58,7 +60,6 @@ class Program
             Console.WriteLine("1. Attaquer");
             Console.WriteLine("2. Prendre une épée");
             Console.WriteLine("3. Prendre une armure");
-            Console.WriteLine("4. Prendre une armure");
             Console.Write("Choisissez une action : ");
             string choixJoueur2 = Console.ReadLine();
 
@@ -83,11 +84,9 @@ class Program
                         Console.WriteLine($"{joueur2.Nom} a déjà pris une armure !");
                     }
                     break;
-                    case "4":
-                    joueur2.outils += epee.Degats;
-                    Console.WriteLine($"{joueur2.Nom} prend une {epee.Nom} et augmente ses dégâts de {epee.Degats}.");
-                    break;
                 default:
+                    Console.WriteLine("Choix invalide !");
+                    break;
             }
 
             if (joueur1.PV <= 0)
